@@ -1,0 +1,20 @@
+div.gnb{
+    display: flex;
+}
+div.gnb1{
+    display: flex;
+}
+div h2:nth-child(2n){
+    color: chartreuse;
+    background-color: red;
+    padding: 10px;
+    margin: 13px;
+    border: blueviolet;
+    width: 30%;
+    margin: 0 auto
+}
+body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: tomato;
+}

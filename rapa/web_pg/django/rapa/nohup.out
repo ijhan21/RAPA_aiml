@@ -1,0 +1,31 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 21, 2021 - 10:34:37
+Django version 3.2.8, using settings 'rapa.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 21, 2021 - 10:37:39
+Django version 3.2.8, using settings 'rapa.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[21/Oct/2021 10:38:18] "GET /admin/ HTTP/1.1" 200 7325
+[21/Oct/2021 10:38:19] "GET /admin/ HTTP/1.1" 200 7325
+[21/Oct/2021 10:38:21] "GET /admin/polls/choice/ HTTP/1.1" 200 6867
+[21/Oct/2021 10:38:21] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[21/Oct/2021 10:38:21] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[21/Oct/2021 10:38:21] "GET /admin/jsi18n/ HTTP/1.1" 200 8330
+[21/Oct/2021 10:38:21] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[21/Oct/2021 10:38:21] "GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+[21/Oct/2021 10:38:21] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[21/Oct/2021 10:38:21] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[21/Oct/2021 10:38:21] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[21/Oct/2021 10:38:21] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[21/Oct/2021 10:38:21] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[21/Oct/2021 10:38:21] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331

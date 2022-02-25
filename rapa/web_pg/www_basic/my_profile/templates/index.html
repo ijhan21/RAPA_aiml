@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Im Jonghan's Profile</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id=top>
+        <h1><a href="#yesterday">과거</a> </h1>
+        <h1><a href="#now">현재</a></h1>
+        <h1><a href="#tomorrow"> 미래</a></h1>
+    </div>
+    <!-- <td><img width=300px src="{{ url_for('static', filename='images/')}}photo.jpg" alt="">임종한</td> -->
+    <div>
+    <td><img width=300px src="{{ url_for('static', filename='images/photo.jpg')}}" alt="">임종한</td>
+</div>
+
+    <div id="accordion">
+        <h3 id="past">과거</h3>
+        <div>
+            <table>
+                <tr>
+                    <th>사진</th>
+                    <td><img src="{{ url_for('static', filename='images/project.png')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/od_project.png')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/robot_hand.png')}}" alt=""></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>Object Detection을 이용한 자동차 부품 검사</td>
+                    <td>버스 하부 프레임 완제품 비전검사</td>
+                    <td>로봇과 인공지능을 결합한 자동 검사 시스템</td>
+                </tr>
+            </table>
+            <h2><a href="#top">To TOP</a></h2>
+        </div>
+
+        <h3 id="now">현재</h3>
+        <div>
+            <table>
+                <tr>
+                    <th>사진</th>
+                    <td><img src="{{ url_for('static', filename='images/exam.png')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/nation_project.png')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/rapa.png')}}" alt=""></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>정보처리기사 시험</td>
+                    <td>아이템 연구</td>
+                    <td>라파 교육생</td>
+                </tr>
+            </table>
+            <h2><a href="#top">To TOP</a></h2>
+        </div>
+
+        <!-- 미래 -->
+        <h3 id="tomorrow">미래</h3>
+        <div>
+            <table>
+                <tr>
+                    <th>사진</th>
+                    <td><img src="{{ url_for('static', filename='images/try_robot_driving.jpg')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/try_robot_hand.jpg')}}" alt=""></td>
+                    <td><img src="{{ url_for('static', filename='images/try.png')}}" alt=""></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td>해커톤 참가</td>
+                    <td>로봇손 인식 소스 개발</td>
+                    <td>빅데이터 대회 참가</td>
+                </tr>
+            </table>
+            <h2><a href="#top">To TOP</a></h2>
+        </div>
+    </div>
+
+
+
+    <!-- 과거 -->
+    <!-- <h2 id="past">과거</h2>
+    <table>
+        <tr>
+            <th>사진</th>
+            <td><img src="{{ url_for('static', filename='images/project.png')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/od_project.png')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/robot_hand.png')}}" alt=""></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td>Object Detection을 이용한 자동차 부품 검사</td>
+            <td>버스 하부 프레임 완제품 비전검사</td>
+            <td>로봇과 인공지능을 결합한 자동 검사 시스템</td>
+        </tr>
+    </table>
+    <h2><a href="#top">To TOP</a></h2> -->
+    <!-- 현재 -->
+    <!-- <h2 id="now">현재</h2>
+    <table>
+        <tr>
+            <th>사진</th>
+            <td><img src="{{ url_for('static', filename='images/exam.png')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/nation_project.png')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/rapa.png')}}" alt=""></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td>정보처리기사 시험</td>
+            <td>아이템 연구</td>
+            <td>라파 교육생</td>
+        </tr>
+    </table>
+    <h2><a href="#top">To TOP</a></h2> -->
+    <!-- 미래 -->
+    <!-- <h2 id="tomorrow">미래</h2>
+    <table>
+        <tr>
+            <th>사진</th>
+            <td><img src="{{ url_for('static', filename='images/try_robot_driving.jpg')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/try_robot_hand.jpg')}}" alt=""></td>
+            <td><img src="{{ url_for('static', filename='images/try.png')}}" alt=""></td>
+        </tr>
+        <tr>
+            <th>내용</th>
+            <td>해커톤 참가</td>
+            <td>로봇손 인식 소스 개발</td>
+            <td>빅데이터 대회 참가</td>
+        </tr>
+    </table>
+    <h2><a href="#top">To TOP</a></h2> -->
+
+
+</body>
+
+</html>

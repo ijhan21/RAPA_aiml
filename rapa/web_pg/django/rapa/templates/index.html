@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+<!doctype html>
+{% load static %}
+<html lang="en-gb" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>Interior Design Free Bootstrap Template</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--Favicons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+
+    <!--styles -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome/font-awesome.css' %}" rel="stylesheet">
+
+    <link href="{% static 'js/owl-carousel/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'js/owl-carousel/owl.theme.css' %}" rel="stylesheet">
+    <link href="{% static 'js/owl-carousel/owl.transitions.css' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" type="text/css" rel="stylesheet">
+    <!-- <link href="{% static 'css/style.css' %}" type="text/css"  rel="stylesheet"/> -->
+
+
+    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            #container {
+                margin: 0px auto;
+                width: 500px;
+                height: 375px;
+                border: 10px #333 solid;
+            }
+    
+            #videoElement {
+                width: 500px;
+                height: 375px;
+                background-color: #666;
+            }
+        </style>
+</head>
+<body data-spy="scroll" data-target="#main-menu">
+    {% block content %}
+
+    <!--Start Page loader -->
+    <div id="pageloader">
+        <div class="loader">
+            <!-- <img src="{% static 'images/progress.gif' %}" alt='loader' /> -->
+            <img src="{% static 'images/progress.gif' %}" alt='loader' />
+        </div>
+    </div>
+    <!--End Page loader -->
+
+
+    <!--Start Slider -->
+    <section id="home">
+        <div class="slider-overlay"></div>
+        <!-- <div class="homeslider flexslider">
+            <ul class="slides">
+                <li class="slide1 bg"></li>
+                <li class="slide2 bg"></li>
+                <li class="slide3 bg"></li>
+            </ul>
+        </div> -->
+        <!--/ homeslider-->
+        <!-- start text slider-->
+        <div class="tb">
+            <div class="tb-cell">
+                <div class="slide-text">
+                    <ul id="text-slider">
+                            <h1>MY FIRST DJANGO APP</h1>
+                            <div class="page-scroll scroll">
+                            <ul>
+                                <p><h3>RAPA DJANGO CLASS<h3> <h2>임종한</h2></p>
+                                
+                                {% for appname in app_list %}
+
+                                {% with appname|add:":"|add:"index" as urlvar %}
+
+                                <a href="{% url urlvar %}" class="btn btn-lg btn-primary btn-color-white">{{ appname }}</a>
+                                {% endwith %}
+                                {% endfor %}
+                            </ul>
+                            </div>
+                    </ul>                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="container">
+        <video autoplay="true" id="videoElement">
+            <script>
+                var video = document.querySelector("#videoElement");
+                if (navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({ video: true })
+                        .then(function (stream) {
+                            video.srcObject = stream;
+                        })
+                        .catch(function (err0r) {
+                            console.log("Something went wrong!");
+                        });
+                }
+            </script>
+        </video>
+    </div>
+    <!--End Slider-->
+
+    {% endblock content %}
+</body>
+
+</html>

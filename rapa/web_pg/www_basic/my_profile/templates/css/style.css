@@ -1,0 +1,27 @@
+body{
+    width: 90%;
+    background-color: slategray;
+    margin: 0 auto;
+}
+div{
+    display: flex;
+}
+h1{
+    width: 40%;
+    margin: 0 auto;
+    background-color: tomato;
+    text-align: center
+}
+table img{
+    width: 400px;
+    height: 300px;
+}
+table{border: 3px;
+    border-color: whitesmoke;
+color: thistle;
+background-color:black;
+width: 90%;
+}
+th{
+    width: 10%;
+}

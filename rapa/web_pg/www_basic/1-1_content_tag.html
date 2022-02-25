@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML 첫 웹페이지 만들기</title>
+</head>
+<body>
+    <!-- 다중커서 : ctrl + shift + 방향키, 멀티커서 alt + 마우스 클릭 -->
+    <!-- div>ul>li*>a : 여러개의 요소를 랩핑하고 개별태그로 -->
+    <!-- 블록선택, p* : 개별 요소에 p태크 적용 -->
+    <!-- ctrl + shift + l : 현재 커서의 단어 한꺼번에 바꾸기 -->
+
+    <div>
+        <h1>h1 사이즈 입니다. 큽니다</h1>
+        <h2>h2 사이즈 입니다. 점점 작아집니다.</h2>
+        <h3>h3 사이즈 입니다</h3>
+        <h4>h4 사이즈 입니다</h4>
+        <h5>h5 사이즈 입니다</h5>
+        <h6>h6 사이즈 입니다. 제일 작아요</h6>
+        <p> p 사이즈 입니다. 한 태그 여러개 만들때는 태그명*갯수 tab</p>
+    </div>
+    <br>
+    <div>
+        <h2>웹표준이란?</h2>
+        <p>웹표준이란 World Wide Web</p>
+    </div>
+    <ul>
+        <li><b>html5</b>&nbsp;  <b>데이터 구조</b> </li>
+        <li><b>css3</b></li>
+        <li><b>javascript</b></li>
+        <li><b>jquery</b></li>
+        <p> li는 앞에 점 찍는 것</p>
+    </ul>
+    <br>
+    <ol>
+        <li>html이 크고</li>
+        <li>head와</li>
+        <li>body</li>
+        <li>ul은 unorder list, ol은 oder list</li>
+    </ol>
+    <br>
+    <div>
+        <a href="https://www.google.com">google</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.naver.com">NAVER</a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.daum.net">DAUM</a>&nbsp;&nbsp;&nbsp;
+    </div>
+    <a href="https://www.daum.net">DAUM</a>&nbsp;&nbsp;&nbsp;
+    <div>
+        <h1>이미지 표현</h1>
+        <p>여러줄을 매핑하려면 블록잡아서 CTRL P 하고 wrap 눌러서 태그 입력</p>
+        <img src="assets/img/dog.jpg" alt="귀여운 강아지" width="300" />
+        <img src="assets/img/cat.jpg" alt="예쁜 고양이" width="300" />
+    </div>
+    <br>
+    <h1>오디오 표현</h1>
+    <br>
+    <audio src="assets/audio/leenalch_tiger.mp3" controls="controls"></audio>
+    <br>
+    <h1>동영상 표현</h1>
+    <p>파일 두개 올리는 이유는 브라우저에 따라서 어떤 확장자가 안되는 경우가 있기 때문에 <br>
+        그게 안되면 밑에것 실행하라는 뜻이다.</p>
+    <p>태그는 대소문자 구분이 안되는데, 파일명은 대소문자 구분됨.</p>
+    <video width="640" controls="controls">
+        <source src="assets/video/wildlife.mp4" type="video/mp4" />
+        <source src="assets/video/wildlife.webm" type="video/webm" />
+    </video>
+    <video width="640" controls="controls" poster="assets/img/wildlife.png">
+        <source src="assets/video/mov_bbb.mp4" type="video/mp4" />
+        <source src="assets/video/mov_bbb.webm" type="video/webm" />
+    </video>
+    <p>iframe은 페이지 안에 페이지 넣을 때 </p>
+    <iframe width="1202" height="676" src="https://www.youtube.com/embed/62EjbCDPYlk" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; cli
+        pboard-write; encrypted-media; gyroscope; picture-in-
+        picture" allowfullscreen>
+    </iframe>
+</body>
+</html>

@@ -1,0 +1,11 @@
+table {border:10px solid blue}
+/* table td{color: green;background-color: yellow;padding: 50px;} */
+table tr th {
+    color: green;
+    padding: 2;
+}
+
+table td:first-child{
+    /* color: red; */
+    background-color: red;
+};

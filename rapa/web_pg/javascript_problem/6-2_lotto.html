@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>커피음료 이용권 추첨</title>
+  <style>
+    .ball {
+      display: inline-block;
+      border: 1px solid black;
+      background-color:blue;
+      color: cornsilk;
+      border-radius: 20px;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+    #bonus > .ball{
+      background-color: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>임종한의 작은 카페 HANU</h1>
+<div id="result">추첨 결과는? </div>
+<p></p>
+<div id="bonus">당첨 번호: </div>
+<script>
+  const candidate = Array(22).fill().map((v, i) => i + 1);
+  const shuffle = [];
+  while (candidate.length > 0) {
+    const random = Math.floor(Math.random() * candidate.length); // 무작위 인덱스 뽑기
+    const spliceArray = candidate.splice(random, 1); // 뽑은 값은 배열에 들어 있음
+    const value = spliceArray[0]; // 배열에 들어 있는 값을 꺼내어
+    shuffle.push(value); // shuffle 배열에 넣기
+  }
+  console.log(shuffle);
+  const winBalls = shuffle.slice(0, 6).sort((a, b) => a - b);
+  const random = Math.floor(Math.random() * 22);
+  const bonus = shuffle[random];
+  console.log(winBalls, bonus);
+
+  const $result = document.querySelector('#result');
+  const drawBall = (number, $parent) => {
+    const $ball = document.createElement('div');
+    $ball.className = 'ball';
+    $ball.textContent = number;
+    $parent.appendChild($ball);
+  };
+
+  for (let i = 0; i < winBalls.length; i++) {
+    setTimeout(() => {
+      drawBall(winBalls[i], $result);
+    }, (i + 1) * 1000);
+  }
+
+  const $bonus = document.querySelector('#bonus');
+  setTimeout(() => {
+    drawBall(bonus, $bonus);
+  }, 7000);
+</script>
+</body>

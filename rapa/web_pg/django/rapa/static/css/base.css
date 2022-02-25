@@ -1,0 +1,60 @@
+h3{color: blueviolet;}
+h2{color:hotpink;}
+body {
+    background-image:url('../images/back.jpg');    
+}
+div#content {
+    width: 800px;
+    margin: 0 auto;
+}
+h1 { color: gold;}
+
+body{
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  div#content{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  div#content h2{
+    margin: 30px;
+  }
+  div#sidev  > ul {
+    display: flex;
+  }
+  div#sidev > ul > li{
+    list-style:none;
+    padding : 5px;
+  }
+  div#sidev ul li a {
+    color : white
+  }
+  div > .apps > li {
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style:none;
+  }
+  div > .apps > li > a{
+    font-size: 30px;
+    color:black;
+  }
+  div > .apps > li > a:link{
+    text-decoration: none;
+  }
+  div > .apps > li > a:hover{
+    color : rgb(189, 29, 122)
+  }
+  div label{
+    font-size: 30px;
+    color : rgb(189, 29, 122)
+  }
+  div li{
+    font-size: 50px;
+    color : rgb(189, 129, 122)
+  }
+  div#ax>{
+      width: 100px;
+  }

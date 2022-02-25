@@ -1,0 +1,41 @@
+h1, ul{
+  color: white;
+  background: black;
+}
+h1 {padding: 20px 0px;}
+li {
+  background: blueviolet;
+  list-style: none;
+  padding: 5px 10px;
+}
+/* .sel {
+  font-size: 20pt;
+  color: blue;
+  font-weight:bold;
+}
+.nosel {
+  color:burlywood;
+} */
+div{
+  background-color: coral;
+  width:600px; 
+  /* 200이라고 쓰면 안된다 200px라고 써야함 */
+  height: 500px;
+  margin-bottom: 5px;
+  margin: 5px;
+  /* top right bottom left 동일 5px*/
+  margin: 5px 10px;
+  /* (top right) (bottom left)*/
+  margin: 5px 10px 15px;
+}
+
+.sel{
+  font-size: 30pt;
+  color:green;
+  font-weight: bold;  
+}
+.nosel{
+  font-size: 16pt;
+  color: gold;
+  font-weight: bold;
+}
